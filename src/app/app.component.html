@@ -1,0 +1,48 @@
+<!-- <div class="container"> -->
+<div class="row">
+    <div class="col-md-12" class="head">
+        REGISTRATION
+      <hr>
+    </div>
+  </div>
+  <div [formGroup]="FrmRegistration">
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="First Name" formControlName="txtFirstName">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <input type="date" class="form-control" placeholder="Date of Birth" formControlName="dteDateOfBirth">
+    </div>
+    <div class='col-md-4'>
+      <select class="form-control"  formControlName="drpGender">
+        <option value="" selected hidden>Gender</option>
+        <option>male</option>
+        <option>female</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <input type="number" class="form-control" placeholder="Mobile Number" formControlName="txtMobileNumber">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <input type="number" class="form-control" placeholder="National ID" formControlName="txtNationalId">
+    </div>
+    <div class="col-md-4">
+      <input type="email" class="form-control" placeholder="Gmail ID" formControlName="txtGmailId">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <button type="button" class="btn btn-info btn-block" (click)="cancel()">Cancel</button>
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="btn btn-info btn-block" (click)="send(FrmRegistration.value)">Save</button>
+    </div>
+  </div>
+  </div>
+<!-- </div> -->

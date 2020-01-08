@@ -1,0 +1,11 @@
+.row {
+  margin: 50px;
+}
+.head{
+  font-size: larger;
+  color: black;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
